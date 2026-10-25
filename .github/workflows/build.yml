@@ -1,104 +1,37 @@
-name: Build & Release
+﻿name: Build and Release
 
 on:
   push:
-    tags: ['v*']
+    tags:
+      - "v*"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
-    runs-on: windows-latest
+  release:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install Python dependencies
-        run: |
-          pip install pdfminer.six pypdf
-
-      - name: Build question banks
-        shell: pwsh
-        run: |
-          # 注意：CI 环境没有原版软件和题库源文件
-          # 这里只做编译验证（SimPatches.dll + Launcher.exe skeleton）
-          # 完整构建需要用户提供源文件，参见 docs/BUILD.md
-          Write-Host "CI build: compile verification only"
-          Write-Host "Full build requires source files (see docs/BUILD.md)"
-
-      - name: Compile SimPatches.dll (syntax check)
-        shell: pwsh
-        run: |
-          $csc = "C:WindowsMicrosoft.NETFramework644.0.30319csc.exe"
-          # 需要引用程序集，CI 中不可用则跳过
-          if (Test-Path $csc) {
-            Write-Host "csc found — would compile SimPatches.cs"
-            # 实际编译需要 Simulation.ref.dll（由用户提供）
-          } else {
-            Write-Host "csc not available, skipping"
-          }
-
-      - name: Compile Launcher.exe (if possible)
-        shell: pwsh
-        run: |
-          $csc = "C:WindowsMicrosoft.NETFramework4.0.30319csc.exe"
-          if (Test-Path $csc) {
-            # 创建空的 payload 目录（CI 不含真实数据）
-            New-Item -ItemType Directory -Force -Path payload | Out-Null
-            # 创建 dummy gz 文件使编译通过
-            $names = @("Simulation.exe","SimPatches.dll","LiveCharts.DLL","LiveCharts.Wpf.DLL",
-              "Newtonsoft.Json.DLL","SQLite.Interop.dll","System.Data.SQLite.DLL",
-              "Simulation.exe.config","CRAC.sqlite3","FAA.sqlite3","FAA_BI.sqlite3")
-            foreach ($n in $names) {
-              $dummy = [System.IO.MemoryStream]::new()
-              $gz = [System.IO.Compression.GZipStream]::new($dummy, [System.IO.Compression.CompressionLevel]::Optimal)
-              $gz.Write([byte[]]@(0), 0, 1)
-              $gz.Dispose()
-              [IO.File]::WriteAllBytes("payload/$n.gz", $dummy.ToArray())
-            }
-            $args = @("/nologo","/target:winexe","/platform:x86","/codepage:65001",
-              "/out:Launcher.exe","src/Launcher.cs")
-            foreach ($gz in Get-ChildItem payload -Filter "*.gz") {
-              $n = [IO.Path]::GetFileNameWithoutExtension($gz.Name)
-              $args += "/resource:payload/$n.gz,payload.$n.gz"
-            }
-            $args += "/r:System.Windows.Forms.dll","/r:System.Drawing.dll",
-              "/r:System.Data.dll","/r:System.Core.dll"
-            & $csc $args
-            Write-Host "Launcher compile: $LASTEXITCODE"
-          }
-
       - name: Package release
         if: startsWith(github.ref, 'refs/tags/')
-        shell: pwsh
         run: |
-          New-Item -ItemType Directory -Force -Path release | Out-Null
-          # 复制翻译文件作为 release artifact
-          Compress-Archive -Path translations/* -DestinationPath release/translations.zip
-          # 复制构建脚本
-          Compress-Archive -Path src/* -DestinationPath release/build-scripts.zip
+          mkdir -p artifacts
+          cd release
+          zip -r ../artifacts/CRAC-FCC-Exam-Mod.zip .
+          cd ..
+          zip -r artifacts/translations.zip translations/
 
-      - name: Create Release
+      - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            release/*.zip
+            artifacts/*.zip
           body: |
-            # BI2XM 魔改版 CRAC/FCC 模拟考试系统
-
-            ## 使用说明
-            1. 准备原版软件安装包和题库源文件（参见 README）
-            2. 按照 docs/BUILD.md 构建完整版本
-            3. 或下载社区预构建版本（如有）
-
-            ## 版权
-            参见 [LICENSE](LICENSE)
+            BI2XM Modified Edition CRAC/FCC Exam Simulator
+            See README for usage instructions.
           draft: false
           prerelease: false
