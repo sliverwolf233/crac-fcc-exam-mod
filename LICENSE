@@ -1,105 +1,188 @@
-多重版权声明 / Multi-License Notice
+多重版权与双许可声明
+Multi-Copyright & Dual-License Notice
 =====================================
 
-本项目包含多个不同来源的内容，各部分的版权和许可如下：
-This project contains content from multiple sources, each with its own
-copyright and license terms:
+版权所有 (c) 2024-2026 BI2XM 及贡献者
+Copyright (c) 2024-2026 BI2XM and contributors
+
+════════════════════════════════════════════════════════════════
+第一部分：第三方内容版权
+Part 1: Third-Party Content Copyrights
+════════════════════════════════════════════════════════════════
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ 1. 原版模拟考试软件 (Simulation.exe)                              │
-│    Original Simulation Software                                 │
+│ 1A. 原版模拟考试软件                                            │
+│     Original Simulation Software (Simulation.exe)               │
 │                                                                 │
 │ 版权所有 © 中国无线电协会 (CRAC)                                  │
-│ Copyright © Chinese Radio Amateurs' Club (CRAC)                 │
+│ Copyright (c) Chinese Radio Amateurs' Club (CRAC)              │
 │                                                                 │
-│ 本项目不分发原版软件。用户需自行获取原版安装包。                       │
-│ This project does NOT distribute the original software.        │
-│ Users must obtain the original installer independently.         │
+│ 本项目分发经修改的软件副本。原版权声明保留。                         │
+│ This project distributes modified copies. Original              │
+│ copyright notice retained.                                      │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ 2. FCC/NCVEC 题库                                                │
-│    FCC/NCVEC Question Pools                                     │
+│ 1B. FCC/NCVEC 题库                                              │
+│     FCC/NCVEC Question Pools                                    │
 │                                                                 │
 │ 版权所有 © 全国志愿者考官协调委员会 (NCVEC)                        │
-│ Copyright © National Conference of Volunteer Examiner           │
+│ Copyright (c) National Conference of Volunteer Examiner         │
 │ Coordinators (NCVEC)                                            │
 │                                                                 │
-│ 依据美国相关法律，题库内容受版权保护。                               │
-│ Question pools are protected by copyright under U.S. law.      │
-│                                                                 │
-│ 本项目不分发题库文件。用户需自行从 NCVEC 官方网站下载。               │
-│ This project does NOT distribute question pool files.          │
-│ Users must download them from NCVEC's official website.         │
+│ 题库内容受美国版权法保护。NCVEC 保留所有权利。                       │
+│ Question pools are protected under U.S. copyright law.         │
+│ NCVEC reserves all rights.                                      │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ 3. CRAC 2025 题库                                                │
-│    CRAC 2025 Question Bank                                      │
+│ 1C. CRAC 2025 题库                                              │
+│     CRAC 2025 Question Bank                                     │
 │                                                                 │
 │ 版权所有 © 中国无线电协会 (CRAC)                                  │
-│ Copyright © Chinese Radio Amateurs' Club (CRAC)                 │
+│ Copyright (c) Chinese Radio Amateurs' Club (CRAC)              │
+└─────────────────────────────────────────────────────────────────┘
+
+════════════════════════════════════════════════════════════════
+第二部分：本项目原创内容许可
+Part 2: Licensing for Original Content
+════════════════════════════════════════════════════════════════
+
+本项目原创内容（包括但不限于：补丁代码、构建脚本、翻译、
+启动器、文档）采用双许可模式：
+
+This project's original content (including but not limited to:
+patch code, build scripts, translations, launcher, documentation)
+is dual-licensed:
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 2A. 主许可：CC BY-NC-SA 4.0                                     │
+│     Primary License: Creative Commons                           │
+│     Attribution-NonCommercial-ShareAlike 4.0 International      │
 │                                                                 │
-│ 本项目不分发题库文件。                                            │
-│ This project does NOT distribute question bank files.          │
+│ 完整文本 / Full text:                                           │
+│   中文：https://creativecommons.org/licenses/by-nc-sa/4.0/     │
+│         /legalcode.zh-hans                                     │
+│   English: https://creativecommons.org/licenses/by-nc-sa/4.0/  │
+│          /legalcode                                            │
+│                                                                 │
+│ 您可以 / You are free to:                                       │
+│ • 共享 — 在任何介质中复制和发行 / Share — copy & redistribute   │
+│ • 演绎 — 修改和创作衍生作品 / Adapt — remix & transform         │
+│                                                                 │
+│ 惟须遵守 / Under the following terms:                           │
+│ • 署名 — 注明原作者和许可链接                                    │
+│   Attribution — credit original authors                         │
+│ • 非商业 — 不得用于商业目的                                      │
+│   NonCommercial — no commercial use whatsoever                  │
+│ • 相同方式共享 — 衍生作品须采用相同许可                           │
+│   ShareAlike — derivatives under the same license               │
+│                                                                 │
+│ ★ 商业行为条款 / Commercial Activity Clause ★                   │
+│                                                                 │
+│ 任何商业行为（包括但不限于：售卖、订阅收费、广告盈利、商业培训    │
+│ 收费、SaaS 收费）均适用本许可的 NC 条款，即被完全禁止。            │
+│                                                                 │
+│ ANY commercial activity (including but not limited to:          │
+│ selling, subscription fees, ad revenue, commercial training,   │
+│ SaaS fees) falls under the NC clause and is PROHIBITED.        │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ 4. 魔改代码、补丁、翻译、构建脚本                                  │
-│    Modified Code, Patches, Translations, Build Scripts           │
+│ 2B. 补充许可：GNU AGPL v3（网络条款）                             │
+│     Supplementary License: GNU Affero GPL v3                   │
+│     (Network/Source-Availability Clause Only)                   │
 │                                                                 │
-│ 根据 知识共享署名-非商业性使用-相同方式共享 4.0 国际 许可协议         │
-│ Licensed under Creative Commons Attribution-NonCommercial-       │
-│ ShareAlike 4.0 International (CC BY-NC-SA 4.0)                  │
+│ 完整文本 / Full text:                                           │
+│   https://www.gnu.org/licenses/agpl-3.0.txt                    │
 │                                                                 │
-│ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans  │
-│ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode      │
+│ 本条款补充 CC BY-NC-SA 4.0 未明确覆盖的场景：                      │
+│ This clause supplements scenarios not explicitly covered       │
+│ by CC BY-NC-SA 4.0:                                             │
 │                                                                 │
-│ 您可以：                                                         │
-│ • 共享 — 在任何介质中以任何格式复制和发行本作品                      │
-│ • 演绎 — 修改、转换或以本作品为基础进行创作                          │
+│ ★ 网络使用触发开源 / Network Use Triggers Source Disclosure ★   │
 │                                                                 │
-│ 惟须遵守下列条件：                                                 │
-│ • 署名 — 必须给出适当的链接和许可证                                 │
-│ • 非商业性使用 — 不得将本作品用于商业目的                            │
-│ • 相同方式共享 — 必须基于与本作品相同的许可协议分发                   │
+│ 如果您通过网络提供本软件或其衍生作品的服务（即使不直接分发         │
+│ 副本），您必须向网络用户提供完整的对应源代码。                      │
 │                                                                 │
-│ You are free to:                                                │
-│ • Share — copy and redistribute the material in any medium     │
-│ • Adapt — remix, transform, and build upon the material        │
+│ If you offer the software or derivatives as a network          │
+│ service (even without distributing copies), you MUST provide   │
+│ the complete corresponding source code to network users.       │
 │                                                                 │
-│ Under the following terms:                                      │
-│ • Attribution — give appropriate credit                         │
-│ • NonCommercial — no commercial use                            │
-│ • ShareAlike — distribute under the same license               │
+│ ★ 强制提供源代码 / Mandatory Source Provision ★                  │
 │                                                                 │
-│ 附加条款 / Additional clause:                                     │
-│ 本作品的魔改标识（BI2XM 魔改版 仅供学习使用 严禁售卖）                 │
-│ 不得移除或遮盖。                                                   │
-│ The modification notice (BI2XM Modified Edition, For Study     │
-│ Only, No Selling) must not be removed or obscured.              │
+│ 任何形式的分发、部署或网络服务，都必须同时提供：                    │
+│ • 完整源代码（包括所有修改）                                     │
+│ • 构建脚本和工具链                                              │
+│ • 安装说明                                                      │
+│                                                                 │
+│ Any form of distribution, deployment, or network service      │
+│ must also provide:                                              │
+│ • Complete source code (including all modifications)           │
+│ • Build scripts and toolchain                                  │
+│ • Installation instructions                                     │
+│                                                                 │
+│ ★ 反 DRM 条款 / Anti-DRM Clause ★                               │
+│                                                                 │
+│ 不得对本作品施加任何技术保护措施（TPM/DRM）以限制                  │
+│ 上述权利的行使。                                                 │
+│                                                                 │
+│ You may not impose any technological protection measures      │
+│ (TPM/DRM) that restrict the exercise of the rights granted    │
+│ above.                                                          │
 └─────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────┐
-│ 5. 中文翻译（FCC Technician 级题库）                               │
-│    Chinese Translations (FCC Technician Pool)                    │
+│ 2C. 许可优先级 / License Precedence                              │
 │                                                                 │
-│ 根据 知识共享署名-非商业性使用-相同方式共享 4.0 国际 许可协议         │
-│ Licensed under CC BY-NC-SA 4.0 (same as section 4)              │
+│ 1. 存在商业行为 → CC BY-NC-SA 4.0（禁止商业使用）                 │
+│    Commercial activity exists → CC BY-NC-SA 4.0 (prohibited)   │
 │                                                                 │
-│ 注意：翻译基于 NCVEC 原文创作，原版权归 NCVEC。                      │
-│ Note: Translations are derived from NCVEC originals;           │
-│ original copyright belongs to NCVEC.                            │
+│ 2. 非商业 + 网络服务 → CC BY-NC-SA 4.0 + AGPL 网络条款           │
+│    Non-commercial + network → CC BY-NC-SA 4.0 + AGPL network   │
+│    （须开源 + 不得收费）                                         │
+│                                                                 │
+│ 3. 非商业 + 本地使用 → CC BY-NC-SA 4.0                           │
+│    Non-commercial + local → CC BY-NC-SA 4.0                     │
+│    （署名 + 相同方式共享）                                       │
+│                                                                 │
+│ 简言之：商业行为一律禁止，非商业行为须开源共享。                    │
+│ In short: commercial use is prohibited;                         │
+│ non-commercial use requires open sharing.                       │
 └─────────────────────────────────────────────────────────────────┘
 
-免责声明 / Disclaimer
-====================
+════════════════════════════════════════════════════════════════
+第三部分：不可移除标识条款
+Part 3: Non-Removable Notice Clause
+════════════════════════════════════════════════════════════════
+
+本作品的魔改标识 "BI2XM 魔改版 仅供学习使用 严禁售卖"
+不得从任何副本、衍生作品或界面中移除、遮盖或修改。
+
+The modification notice "BI2XM Modified Edition, For Study Only,
+No Selling" must not be removed, obscured, or modified from any
+copy, derivative work, or user interface.
+
+违反本条款视为侵犯署名权并自动触发 AGPL v3 全部条款。
+
+Violation of this clause constitutes infringement of attribution
+rights and automatically triggers the full terms of AGPL v3.
+
+════════════════════════════════════════════════════════════════
+第四部分：免责声明
+Part 4: Disclaimer
+════════════════════════════════════════════════════════════════
+
 本作品按"原样"提供，不附带任何明示或暗示的保证。
-This work is provided "AS IS" without warranty of any kind.
+This work is provided "AS IS" without warranty of any kind,
+express or implied.
 
 作者不对使用本作品造成的任何损失承担责任。
-The author shall not be liable for any damages arising from
+The authors shall not be liable for any damages arising from
 the use of this work.
 
 本项目仅用于学习和研究目的。
 This project is for educational and research purposes only.
+
+使用者需自行确保符合所在地区的无线电法规。
+Users must ensure compliance with local radio regulations.

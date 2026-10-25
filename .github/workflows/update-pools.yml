@@ -1,0 +1,56 @@
+name: Monthly NCVEC Pool Update
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-pools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install python-docx
+
+      - name: Fetch latest pools
+        id: fetch
+        run: |
+          python scripts/fetch_pools.py
+          cat downloads/fetch_summary.json
+          if grep -q '"updated": true' downloads/fetch_summary.json; then
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Convert pools to SQLite
+        if: steps.fetch.outputs.has_updates == 'true'
+        run: |
+          python scripts/convert_pools.py
+          cat downloads/convert_results.json
+
+      - name: Create Pull Request
+        if: steps.fetch.outputs.has_updates == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: auto-update NCVEC question pools"
+          title: "chore: NCVEC pool auto-update"
+          body: |
+            Automated pool update from NCVEC (monthly schedule).
+            See downloads/ for fetch and conversion details.
+          branch: auto/ncvec-pool-update
+          delete-branch: true
+          labels: |
+            automation
+            question-pool
