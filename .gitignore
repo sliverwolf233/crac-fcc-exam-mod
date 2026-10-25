@@ -1,0 +1,41 @@
+# === 隐私数据（绝不上传） ===
+personal.dat
+*.sqlite3
+SimulationSys.sqlite3*
+sim_app/
+banks/*.sqlite3
+banks/active.txt
+banks/bilingual.txt
+banks/original-backup.sqlite3
+
+# === 原版软件（版权归 CRAC，不上传） ===
+setup.exe
+SimuSetup_x86.msi
+Simulation.exe
+Simulation.exe.config
+crac_logo.ico
+
+# === 原始题库源文件（版权归 CRAC / NCVEC，不上传） ===
+最新版本题库*/
+*.pdf
+*.docx
+parsed_*.json
+faa_*.json
+
+# === 构建产物（由 Actions 生成，不上传） ===
+_work/payload/
+_work/surgery/Simulation*.exe
+_work/surgery/Simulation*.dll
+_work/surgery/Launcher.exe
+_work/surgery/Simulation.ref.dll
+*.zip
+
+# === 临时/测试 ===
+_*/[!s]*
+_test*/
+_*.txt
+_*.png
+*.log
+__pycache__/
+pylibs/
+dl/

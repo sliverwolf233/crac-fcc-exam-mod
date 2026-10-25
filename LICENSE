@@ -1,0 +1,105 @@
+多重版权声明 / Multi-License Notice
+=====================================
+
+本项目包含多个不同来源的内容，各部分的版权和许可如下：
+This project contains content from multiple sources, each with its own
+copyright and license terms:
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 1. 原版模拟考试软件 (Simulation.exe)                              │
+│    Original Simulation Software                                 │
+│                                                                 │
+│ 版权所有 © 中国无线电协会 (CRAC)                                  │
+│ Copyright © Chinese Radio Amateurs' Club (CRAC)                 │
+│                                                                 │
+│ 本项目不分发原版软件。用户需自行获取原版安装包。                       │
+│ This project does NOT distribute the original software.        │
+│ Users must obtain the original installer independently.         │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 2. FCC/NCVEC 题库                                                │
+│    FCC/NCVEC Question Pools                                     │
+│                                                                 │
+│ 版权所有 © 全国志愿者考官协调委员会 (NCVEC)                        │
+│ Copyright © National Conference of Volunteer Examiner           │
+│ Coordinators (NCVEC)                                            │
+│                                                                 │
+│ 依据美国相关法律，题库内容受版权保护。                               │
+│ Question pools are protected by copyright under U.S. law.      │
+│                                                                 │
+│ 本项目不分发题库文件。用户需自行从 NCVEC 官方网站下载。               │
+│ This project does NOT distribute question pool files.          │
+│ Users must download them from NCVEC's official website.         │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 3. CRAC 2025 题库                                                │
+│    CRAC 2025 Question Bank                                      │
+│                                                                 │
+│ 版权所有 © 中国无线电协会 (CRAC)                                  │
+│ Copyright © Chinese Radio Amateurs' Club (CRAC)                 │
+│                                                                 │
+│ 本项目不分发题库文件。                                            │
+│ This project does NOT distribute question bank files.          │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 4. 魔改代码、补丁、翻译、构建脚本                                  │
+│    Modified Code, Patches, Translations, Build Scripts           │
+│                                                                 │
+│ 根据 知识共享署名-非商业性使用-相同方式共享 4.0 国际 许可协议         │
+│ Licensed under Creative Commons Attribution-NonCommercial-       │
+│ ShareAlike 4.0 International (CC BY-NC-SA 4.0)                  │
+│                                                                 │
+│ https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans  │
+│ https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode      │
+│                                                                 │
+│ 您可以：                                                         │
+│ • 共享 — 在任何介质中以任何格式复制和发行本作品                      │
+│ • 演绎 — 修改、转换或以本作品为基础进行创作                          │
+│                                                                 │
+│ 惟须遵守下列条件：                                                 │
+│ • 署名 — 必须给出适当的链接和许可证                                 │
+│ • 非商业性使用 — 不得将本作品用于商业目的                            │
+│ • 相同方式共享 — 必须基于与本作品相同的许可协议分发                   │
+│                                                                 │
+│ You are free to:                                                │
+│ • Share — copy and redistribute the material in any medium     │
+│ • Adapt — remix, transform, and build upon the material        │
+│                                                                 │
+│ Under the following terms:                                      │
+│ • Attribution — give appropriate credit                         │
+│ • NonCommercial — no commercial use                            │
+│ • ShareAlike — distribute under the same license               │
+│                                                                 │
+│ 附加条款 / Additional clause:                                     │
+│ 本作品的魔改标识（BI2XM 魔改版 仅供学习使用 严禁售卖）                 │
+│ 不得移除或遮盖。                                                   │
+│ The modification notice (BI2XM Modified Edition, For Study     │
+│ Only, No Selling) must not be removed or obscured.              │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ 5. 中文翻译（FCC Technician 级题库）                               │
+│    Chinese Translations (FCC Technician Pool)                    │
+│                                                                 │
+│ 根据 知识共享署名-非商业性使用-相同方式共享 4.0 国际 许可协议         │
+│ Licensed under CC BY-NC-SA 4.0 (same as section 4)              │
+│                                                                 │
+│ 注意：翻译基于 NCVEC 原文创作，原版权归 NCVEC。                      │
+│ Note: Translations are derived from NCVEC originals;           │
+│ original copyright belongs to NCVEC.                            │
+└─────────────────────────────────────────────────────────────────┘
+
+免责声明 / Disclaimer
+====================
+本作品按"原样"提供，不附带任何明示或暗示的保证。
+This work is provided "AS IS" without warranty of any kind.
+
+作者不对使用本作品造成的任何损失承担责任。
+The author shall not be liable for any damages arising from
+the use of this work.
+
+本项目仅用于学习和研究目的。
+This project is for educational and research purposes only.
